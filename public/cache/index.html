@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Caching Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="/assets/application.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/bootstrap-generators.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/bootstrap-variables.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-transition.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-alert.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-modal.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-dropdown.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-scrollspy.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-tab.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-tooltip.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-popover.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-button.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-collapse.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-carousel.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-typeahead.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-affix.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap.js?body=1" type="text/javascript"></script>
+<script src="/assets/posts.js?body=1" type="text/javascript"></script>
+<script src="/assets/application.js?body=1" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="S+FnwWoIshEu4yfAJDoO6ngaSu+2pw2axRXhyXaOVJk=" name="csrf-token" />
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a href="/" class="brand">Caching Demo</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="page-header">
+  <a href="/posts/new" class="btn btn-primary">
+    <i class="icon-plus icon-white"></i>
+    New Post
+</a>  <h1>Listing posts</h1>
+</div>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Desciption</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>First Post</td>
+      <td>Let check how many comments I will get for my first post</td>
+      <td><a href="/posts/1">Show</a></td>
+      <td><a href="/posts/1/edit">Edit</a></td>
+      <td><a href="/posts/1" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>Testing Secong Post</td>
+      <td>Yeah Seems Page caching working just need to check expiration after update</td>
+      <td><a href="/posts/3">Show</a></td>
+      <td><a href="/posts/3/edit">Edit</a></td>
+      <td><a href="/posts/3" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>again tesing comments</td>
+      <td>Testing Comments</td>
+      <td><a href="/posts/6">Show</a></td>
+      <td><a href="/posts/6/edit">Edit</a></td>
+      <td><a href="/posts/6" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 1</td>
+      <td>This is a description for post title as This is Post Number 1</td>
+      <td><a href="/posts/8">Show</a></td>
+      <td><a href="/posts/8/edit">Edit</a></td>
+      <td><a href="/posts/8" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 2</td>
+      <td>This is a description for post title as This is Post Number 2</td>
+      <td><a href="/posts/9">Show</a></td>
+      <td><a href="/posts/9/edit">Edit</a></td>
+      <td><a href="/posts/9" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 3</td>
+      <td>This is a description for post title as This is Post Number 3</td>
+      <td><a href="/posts/10">Show</a></td>
+      <td><a href="/posts/10/edit">Edit</a></td>
+      <td><a href="/posts/10" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 4</td>
+      <td>This is a description for post title as This is Post Number 4</td>
+      <td><a href="/posts/11">Show</a></td>
+      <td><a href="/posts/11/edit">Edit</a></td>
+      <td><a href="/posts/11" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 5</td>
+      <td>This is a description for post title as This is Post Number 5</td>
+      <td><a href="/posts/12">Show</a></td>
+      <td><a href="/posts/12/edit">Edit</a></td>
+      <td><a href="/posts/12" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 6</td>
+      <td>This is a description for post title as This is Post Number 6</td>
+      <td><a href="/posts/13">Show</a></td>
+      <td><a href="/posts/13/edit">Edit</a></td>
+      <td><a href="/posts/13" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 7</td>
+      <td>This is a description for post title as This is Post Number 7</td>
+      <td><a href="/posts/14">Show</a></td>
+      <td><a href="/posts/14/edit">Edit</a></td>
+      <td><a href="/posts/14" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="pagination"><span class="previous_page disabled">&#8592; Previous</span> <em>1</em> <a rel="next" href="/posts/page/2">2</a> <a href="/posts/page/3">3</a> <a href="/posts/page/4">4</a> <a href="/posts/page/5">5</a> <a href="/posts/page/6">6</a> <a href="/posts/page/7">7</a> <a href="/posts/page/8">8</a> <a href="/posts/page/9">9</a> <a href="/posts/page/10">10</a> <a href="/posts/page/11">11</a> <a rel="next" class="next_page" href="/posts/page/2">Next &#8594;</a></div>
+ <h2> Total Post 103</h2>
+
+    <hr>
+    <footer>
+      <p>&copy; Company 2013 </p>
+    </footer>
+  </div>
+</body>
+</html>

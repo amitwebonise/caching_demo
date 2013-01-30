@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Caching Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="/assets/application.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/bootstrap-generators.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/bootstrap-variables.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-transition.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-alert.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-modal.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-dropdown.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-scrollspy.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-tab.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-tooltip.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-popover.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-button.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-collapse.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-carousel.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-typeahead.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap-affix.js?body=1" type="text/javascript"></script>
+<script src="/assets/bootstrap.js?body=1" type="text/javascript"></script>
+<script src="/assets/posts.js?body=1" type="text/javascript"></script>
+<script src="/assets/application.js?body=1" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="S+FnwWoIshEu4yfAJDoO6ngaSu+2pw2axRXhyXaOVJk=" name="csrf-token" />
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a href="/" class="brand">Caching Demo</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="page-header">
+  <a href="/posts/new" class="btn btn-primary">
+    <i class="icon-plus icon-white"></i>
+    New Post
+</a>  <h1>Listing posts</h1>
+</div>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Desciption</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>This is Post Number 38</td>
+      <td>This is a description for post title as This is Post Number 38</td>
+      <td><a href="/posts/45">Show</a></td>
+      <td><a href="/posts/45/edit">Edit</a></td>
+      <td><a href="/posts/45" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 39</td>
+      <td>This is a description for post title as This is Post Number 39</td>
+      <td><a href="/posts/46">Show</a></td>
+      <td><a href="/posts/46/edit">Edit</a></td>
+      <td><a href="/posts/46" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 40</td>
+      <td>This is a description for post title as This is Post Number 40</td>
+      <td><a href="/posts/47">Show</a></td>
+      <td><a href="/posts/47/edit">Edit</a></td>
+      <td><a href="/posts/47" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 41</td>
+      <td>This is a description for post title as This is Post Number 41</td>
+      <td><a href="/posts/48">Show</a></td>
+      <td><a href="/posts/48/edit">Edit</a></td>
+      <td><a href="/posts/48" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 42</td>
+      <td>This is a description for post title as This is Post Number 42</td>
+      <td><a href="/posts/49">Show</a></td>
+      <td><a href="/posts/49/edit">Edit</a></td>
+      <td><a href="/posts/49" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 43</td>
+      <td>This is a description for post title as This is Post Number 43</td>
+      <td><a href="/posts/50">Show</a></td>
+      <td><a href="/posts/50/edit">Edit</a></td>
+      <td><a href="/posts/50" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 44</td>
+      <td>This is a description for post title as This is Post Number 44</td>
+      <td><a href="/posts/51">Show</a></td>
+      <td><a href="/posts/51/edit">Edit</a></td>
+      <td><a href="/posts/51" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 45</td>
+      <td>This is a description for post title as This is Post Number 45</td>
+      <td><a href="/posts/52">Show</a></td>
+      <td><a href="/posts/52/edit">Edit</a></td>
+      <td><a href="/posts/52" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 46</td>
+      <td>This is a description for post title as This is Post Number 46</td>
+      <td><a href="/posts/53">Show</a></td>
+      <td><a href="/posts/53/edit">Edit</a></td>
+      <td><a href="/posts/53" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+    <tr>
+      <td>This is Post Number 47</td>
+      <td>This is a description for post title as This is Post Number 47</td>
+      <td><a href="/posts/54">Show</a></td>
+      <td><a href="/posts/54/edit">Edit</a></td>
+      <td><a href="/posts/54" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Destroy</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="pagination"><a rel="prev" class="previous_page" href="/posts/page/4">&#8592; Previous</a> <a rel="start" href="/posts/page/1">1</a> <a href="/posts/page/2">2</a> <a href="/posts/page/3">3</a> <a rel="prev" href="/posts/page/4">4</a> <em>5</em> <a rel="next" href="/posts/page/6">6</a> <a href="/posts/page/7">7</a> <a href="/posts/page/8">8</a> <a href="/posts/page/9">9</a> <a href="/posts/page/10">10</a> <a href="/posts/page/11">11</a> <a rel="next" class="next_page" href="/posts/page/6">Next &#8594;</a></div>
+ <h2> Total Post 103</h2>
+
+    <hr>
+    <footer>
+      <p>&copy; Company 2013 </p>
+    </footer>
+  </div>
+</body>
+</html>

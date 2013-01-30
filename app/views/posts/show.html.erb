@@ -1,0 +1,39 @@
+<div class="page-header">
+  <%= link_to posts_path, :class => 'btn' do %>
+    <i class="icon-list-alt"></i>
+    Back
+  <% end %>
+  <%= link_to edit_post_path(@post), :class => 'btn btn-primary' do %>
+    <i class="icon-pencil icon-white"></i>
+    Edit
+  <% end %>
+  <h1>Post</h1>
+</div>
+
+<dl>
+  <dt>Title:</dt>
+  <dd><%= @post.title %></dd>
+
+  <dt>Desciption:</dt>
+  <dd><%= @post.desciption %></dd>
+
+</dl>
+<h3> Comments</h3>
+<ul class="unstyled">
+<% @comments.each do |comment|%>
+  <li> <%=  comment.body %></li>
+ <% end%>
+</ul>
+
+<%= simple_form_for(@comment, :url => 	create_comment_post_path(@post), :defaults => { :input_html => { :class => 'input-xlarge' } }) do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-inputs">
+      <%= f.input :body %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit "Post Comment", :class => "btn-primary" %>
+    </div>
+<% end %>
+
